@@ -13,14 +13,11 @@ class Stack{
         ptr = -1;
       }
 
-      void push(int x)
-      {
-          if (ptr == size - 1)
-          {
+      void push(int x){
+          if (ptr == size - 1){
               cout << "\nOverFlow!\n";
           }
-          else
-          {
+          else{
               ptr++;
               stack[ptr] = x;
           }
@@ -65,7 +62,6 @@ int main(){
                 cout << "\nElement poped: " << s1.pop();
                 break;
             }
-
             case 3:{
                 cout << "\n-----------\n";
                 s1.show();
