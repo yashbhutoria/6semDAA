@@ -40,7 +40,6 @@ class Stack{
                 cout<<"\n"<< stack[i];
             }
         }
-
 };
 
 
