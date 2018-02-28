@@ -13,14 +13,10 @@ class Stack{
         ptr = -1;
       }
 
-      void push(int x)
-      {
-          if (ptr == size - 1)
-          {
+      void push(int x){
+          if (ptr == size - 1){
               cout << "\nOverFlow!\n";
-          }
-          else
-          {
+          }else{
               ptr++;
               stack[ptr] = x;
           }
@@ -61,12 +57,10 @@ class Queue{
 
         int deque(){
             int br = 0;
-
             while ( s1->ptr > -1 ){
                 br = s1->pop();
                 s2->push(br);
             }
-
             return s2->pop();
         }
 
